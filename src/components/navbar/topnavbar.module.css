@@ -1,0 +1,122 @@
+.cont{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background: rgba(255, 255, 255, 0.8);
+}
+.gotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background:var(--fcolor);
+    padding: 10px;
+    color: white;
+    z-index: 10;
+}
+.navbox{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.logobox{
+    width: max-content;
+    height:100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    height:50px;
+    border-radius: 50%;
+    width: auto;
+    object-fit: contain;
+    scale: 1.1;
+    margin-left: 5px;
+}
+.linkbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.linkbox a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.alinks{
+    border:2px solid var(--fcolor);
+    color: var(--fcolor);
+    padding: 0;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.alinks:hover{
+    color: white;
+    background: var(--fcolor);
+}
+.menulinkbox a{
+    text-decoration: none;
+    font-size: 16px;
+    background: white;
+    min-width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubox{
+    display: none;
+}
+.closemenu{
+    display: none;
+}
+.menulinkbox{
+    display: none;
+}
+@media(max-width:830px){
+    .menulinkbox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.005);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(18.1px);
+        -webkit-backdrop-filter: blur(18.1px);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+        transition: all .7s;
+    }
+    .menubox{
+        display: flex;
+    }
+    .linkbox{
+        display: none;
+    }
+    .closemenu{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
