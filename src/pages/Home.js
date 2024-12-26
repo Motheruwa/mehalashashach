@@ -8,6 +8,8 @@ import Testimonials from "../components/cards/Testimonials";
 // import ModelShow from "../components/ModelShow";
 import { FaAngleDown} from "react-icons/fa";
 import WorkDash from "../components/cards/WorkDash";
+import ProductSlide from "../components/cards/ProductSlide";
+
 const Home = () => {
 
   useEffect(() => {
@@ -16,6 +18,7 @@ const Home = () => {
 
   return (
     <div className={styles.cont}>
+      <ProductSlide/>
       <div className={styles.videobox}>
         <video className={styles.video} src={video} autoPlay loop muted />
         {/* <div className={styles.logo}>
