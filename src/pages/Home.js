@@ -11,7 +11,7 @@ import WorkDash from "../components/cards/WorkDash";
 const Home = () => {
 
   useEffect(() => {
-    document.title = 'Marvellous Furniture - Home';
+    document.title = 'Mehal Ashashach - Home';
   }, []);
 
   return (
