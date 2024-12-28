@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './footer.module.css'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logopng.png'
+import logo from '../../assets/logo.png'
 import { FaFacebook, FaInstagram,  FaTelegram, FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className={styles.content}>
                 <div className={styles.links}>{links.map(l=><NavLink onClick={scrollTop} key={l.id} to={l.href}>{l.name}</NavLink>)}</div>
-                <div className={styles.copyright}>Copyright &copy; {new Date().getFullYear()} Marvellous Furniture. </div>
+                <div className={styles.copyright}>Copyright &copy; {new Date().getFullYear()} mehal Ashashach. </div>
             </div>
         </div>
     </div>
